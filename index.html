@@ -3,30 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rose Petals Falling with Autoplay Music</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Falling Roses</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Container chứa hình ảnh và nhạc tự động phát -->
-<div class="container">
-    <!-- Nhạc tự động phát -->
-<audio controls autoplay>
-  <source src="xuan.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-    <!-- Hình ảnh -->
-    <img src="anh1.PNG" alt="Ảnh" width="500" height="300">
-
-
-    <!-- Hoa hồng rơi từ 6 vị trí khác nhau -->
-    <div class="rose-container" style="top: 10%; left: 10%;"></div>
-    <div class="rose-container" style="top: 10%; left: 50%;"></div>
-    <div class="rose-container" style="top: 10%; left: 90%;"></div>
-    <div class="rose-container" style="top: 50%; left: 10%;"></div>
-    <div class="rose-container" style="top: 50%; left: 50%;"></div>
-    <div class="rose-container" style="top: 50%; left: 90%;"></div>
-</div>
+    <div class="background-image">
+        <img src="https://mega.com.vn/media/news/0408_hinh-nen-dep-iphone9.jpg" alt="Background" class="background">
+    </div>
+    <div class="container">
+        <img src="rose.png" alt="Rose" class="rose">
+        <audio src="xuan.mp3" autoplay loop></audio>
+    </div>
 </body>
 </html>
