@@ -36,9 +36,10 @@
 </style>
 </head>
 <body>
-    <audio controls>
-        <source src="background_music.mp3">
-    </audio>
+    <audio id="background-music">
+  <source src="background_music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
     
 <div id="image-behind-flowers">
     <img src="anh1.PNG" alt="Your Image">
@@ -48,5 +49,13 @@
 </div>
 <canvas id="canvas"></canvas>
 <script src="flowers.js"></script>
+    <script>
+    const backgroundMusic = document.getElementById('background-music');
+
+    // Hàm để phát nhạc
+    function playMusic() {
+        backgroundMusic.play();
+    }
+</script>
 </body>
 </html>
