@@ -17,3 +17,29 @@ body, html {
     max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
     max-height: 80vh; /* Hình ảnh không vượt quá 80% chiều cao của viewport */
 }
+
+.rose-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rose {
+    position: absolute;
+    width: 50px; /* Kích thước của hoa hồng */
+    height: 50px; /* Kích thước của hoa hồng */
+    background-image: url('rose.png'); /* Hình ảnh của hoa hồng */
+    animation: fall 10s linear infinite; /* Animation */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotateZ(0deg); /* Vị trí ban đầu và góc xoay */
+    }
+    100% {
+        transform: translateY(100vh) rotateZ(360deg); /* Vị trí kết thúc và góc xoay */
+    }
+}
