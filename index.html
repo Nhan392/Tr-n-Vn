@@ -10,13 +10,14 @@
         overflow: hidden;
         background-color: transparent; /* Đặt màu nền của trang thành trong suốt */
     }
-    #image-container {
+    #image-behind-flowers {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); /* Đặt hình ảnh vào giữa trang */
+        z-index: -1; /* Đặt ảnh phía sau */
     }
-    #image-container img {
+    #image-behind-flowers img {
         max-width: 100%;
         max-height: 100%;
     }
@@ -26,7 +27,7 @@
 </style>
 </head>
 <body>
-<div id="image-container">
+<div id="image-behind-flowers">
     <img src="anh1.PNG" alt="Your Image">
 </div>
 <canvas id="canvas"></canvas>
