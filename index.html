@@ -33,25 +33,13 @@
     canvas {
         display: block;
     }
-    #play-music-button {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
 </style>
 </head>
-<body>
-    <audio id="background-music">
+<body onclick="playMusic()">
+<audio id="background-music">
   <source src="background_music.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-    
 <div id="image-behind-flowers">
     <img src="anh1.PNG" alt="Your Image">
 </div>
@@ -59,19 +47,16 @@
     Woah Ai Nỉ
 </div>
 <canvas id="canvas"></canvas>
-<button id="play-music-button">Musicc</button>
 <script src="flowers.js"></script>
     <script>
     const backgroundMusic = document.getElementById('background-music');
-    const playButton = document.getElementById('play-music-button');
 
     // Hàm để phát nhạc
     function playMusic() {
         backgroundMusic.play();
+        // Xóa sự kiện click sau khi đã phát nhạc
+        document.body.onclick = null;
     }
-
-    // Sự kiện click vào nút để phát nhạc
-    playButton.addEventListener('click', playMusic);
 </script>
 </body>
 </html>
