@@ -8,19 +8,17 @@
     body {
         margin: 0;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        background-color: transparent; /* Đặt màu nền của trang thành trong suốt */
     }
     #image-container {
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Đặt hình ảnh vào giữa trang */
     }
     #image-container img {
         max-width: 100%;
         max-height: 100%;
-        display: block;
-        margin: auto;
     }
     canvas {
         display: block;
