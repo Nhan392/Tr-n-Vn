@@ -3,17 +3,18 @@ body, html {
     padding: 0;
     height: 100%;
 }
-
 .container {
     position: relative;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.image {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
+.resizable-image {
+    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
+    max-height: 80vh; /* Hình ảnh không vượt quá 80% chiều cao của viewport */
 }
 
 .bubble-container {
