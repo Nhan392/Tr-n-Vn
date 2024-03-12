@@ -1,6 +1,13 @@
+/* CSS cho container chứa hoa hồng và nhạc */
+.container {
+    position: relative;
+}
+
 /* CSS cho container chứa hoa hồng */
 .rose-container {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -13,7 +20,7 @@
     background-size: cover;
     width: 30px; /* Điều chỉnh kích thước hoa hồng */
     height: 30px; /* Điều chỉnh kích thước hoa hồng */
-    animation: fall 2s linear infinite; /* Chỉ định hiệu ứng rơi */
+    animation: fall 3s linear infinite; /* Chỉ định hiệu ứng rơi */
 }
 
 /* Keyframes cho hiệu ứng rơi */
