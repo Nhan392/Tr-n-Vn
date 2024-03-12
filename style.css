@@ -21,7 +21,7 @@
 /* CSS cho hoa hồng rơi */
 .rose-petal {
     position: absolute;
-    background-image: url('rose.png'); /* Thay đổi tên tệp hình ảnh */
+    background-image: url('https://img.freepik.com/free-psd/fresh-pink-rose-isolated-transparent-background_191095-13926.jpg'); /* Thay đổi tên tệp hình ảnh */
     background-size: cover;
     width: 20px; /* Điều chỉnh kích thước hoa hồng */
     height: 20px; /* Điều chỉnh kích thước hoa hồng */
