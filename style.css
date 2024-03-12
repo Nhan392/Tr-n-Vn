@@ -14,8 +14,13 @@ body, html {
 }
 
 .resizable-image {
-    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
-    max-height: 80vh; /* Hình ảnh không vượt quá 80% chiều cao của viewport */
+    max-width: 50%; /* Hình ảnh không vượt quá chiều rộng của container */
+    max-height: 60vh; /* Hình ảnh không vượt quá 80% chiều cao của viewport */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .rose-container {
