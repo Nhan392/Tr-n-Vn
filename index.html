@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heartbeat with Autoplay Music</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Autoplay Music with Image</title>
 </head>
 <body>
 
-<!-- Trái tim đập đập -->
-<div class="heart-container">
-    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="red" width="100px" height="100px" id="heart">
-        <path fill="red" d="M10 40c0-13.233 10.767-24 24-24s24 10.767 24 24c0 7.236-3.353 13.687-8.626 17.961l-2.282 2.049-1.14-1.02a24.5 24.5 0 0 1-6.452-5.535l-.705-.805-.705.805a24.5 24.5 0 0 1-6.452 5.535l-1.14 1.02-2.282-2.048A23.945 23.945 0 0 1 10 40z" id="heart-path"></path>
-    </svg>
-</div>
-
-<!-- Nhạc tự động phát -->
-<audio autoplay loop>
-    <source src="xuan.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+<!-- Audio -->
+<audio id="background-music" autoplay loop>
+  <source src="ten_file_nhac.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
+
+<!-- Image -->
+<img src="anh1.PNG" alt="Ảnh" width="500" height="500">
 
 </body>
 </html>
