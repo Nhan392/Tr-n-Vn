@@ -8,8 +8,19 @@
     body {
         margin: 0;
         overflow: hidden;
-        background-image: url('background.jpg');
-        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #image-container {
+        position: relative;
+    }
+    #image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
     }
     canvas {
         display: block;
@@ -17,6 +28,9 @@
 </style>
 </head>
 <body>
+<div id="image-container">
+    <img src="anh1.PNG" alt="Your Image">
+</div>
 <canvas id="canvas"></canvas>
 <script src="flowers.js"></script>
 </body>
