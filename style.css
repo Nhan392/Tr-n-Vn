@@ -4,40 +4,59 @@ body, html {
     height: 100%;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ phần tử */
-}
-
 .container {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
-.rose {
+.image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.bubble-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bubble {
     position: absolute;
-    top: -100px; /* Initial position off the screen */
-    left: 50%;
-    transform: translateX(-50%);
-    animation: fall 10s linear infinite;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: bubble-float 5s infinite linear;
 }
 
-@keyframes fall {
+@keyframes bubble-float {
     0% {
-        top: -100px;
+        transform: translateY(0) rotate(0);
     }
     100% {
-        top: 100%;
+        transform: translateY(-1000px) rotate(360deg);
     }
+}
+
+.bubble:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    top: 80%;
+    left: 70%;
+    animation-delay: 2s;
 }
