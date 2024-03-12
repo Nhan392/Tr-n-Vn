@@ -1,7 +1,29 @@
-/* CSS để căn giữa trái tim */
-.heart-container {
+/* CSS cho container chứa hoa hồng */
+.rose-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* CSS cho hoa hồng rơi */
+.rose-petal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-image: url('ten_file_hoa_hong.png'); /* Thay đổi tên tệp hình ảnh */
+    background-size: cover;
+    width: 20px; /* Điều chỉnh kích thước hoa hồng */
+    height: 20px; /* Điều chỉnh kích thước hoa hồng */
+    animation: fall 5s linear infinite; /* Chỉ định hiệu ứng rơi */
+}
+
+/* Keyframes cho hiệu ứng rơi */
+@keyframes fall {
+    0% {
+        top: -10%; /* Vị trí ban đầu của hoa hồng */
+        opacity: 1; /* Độ trong suốt ban đầu */
+    }
+    100% {
+        top: 110%; /* Vị trí cuối cùng của hoa hồng */
+        opacity: 0; /* Độ trong suốt cuối cùng */
+    }
 }
