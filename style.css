@@ -5,7 +5,7 @@
 
 /* CSS cho hình ảnh */
 .rose-image {
-    width: 30%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container */
+    width: 10%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container */
 }
 
 /* CSS cho container chứa hoa hồng */
@@ -35,7 +35,7 @@
         opacity: 1; /* Độ trong suốt ban đầu */
     }
     100% {
-        top: 110%; /* Vị trí cuối cùng của hoa hồng */
+        top: 210%; /* Vị trí cuối cùng của hoa hồng */
         opacity: 0; /* Độ trong suốt cuối cùng */
     }
 }
