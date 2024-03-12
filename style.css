@@ -1,6 +1,18 @@
+/* CSS cho container chứa hình ảnh và nhạc */
+.container {
+    position: relative;
+}
+
+/* CSS cho hình ảnh */
+.rose-image {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container */
+}
+
 /* CSS cho container chứa hoa hồng */
 .rose-container {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -9,7 +21,7 @@
 /* CSS cho hoa hồng rơi */
 .rose-petal {
     position: absolute;
-    background-image: url('ten_file_hoa_hong.png'); /* Thay đổi tên tệp hình ảnh */
+    background-image: url('rose.png'); /* Thay đổi tên tệp hình ảnh */
     background-size: cover;
     width: 20px; /* Điều chỉnh kích thước hoa hồng */
     height: 20px; /* Điều chỉnh kích thước hoa hồng */
