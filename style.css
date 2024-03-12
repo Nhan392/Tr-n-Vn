@@ -1,35 +1,26 @@
-/* CSS cho container chứa hoa hồng và nhạc */
-.container {
-    position: relative;
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
 }
-/* CSS cho container chứa hoa hồng */
-.rose-container {
+
+.rose-petals {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(white, #ff0066);
+    border-radius: 50%;
+    animation: petals 4s linear infinite;
 }
 
-/* CSS cho hoa hồng rơi */
-.rose-petal {
-    position: absolute;
-    background-image: url('rose.png'); /* Thay đổi tên tệp hình ảnh */
-    background-size: cover;
-    width: 30px; /* Điều chỉnh kích thước hoa hồng */
-    height: 30px; /* Điều chỉnh kích thước hoa hồng */
-    animation: fall 3s linear infinite; /* Chỉ định hiệu ứng rơi */
-}
-
-/* Keyframes cho hiệu ứng rơi */
-@keyframes fall {
+@keyframes petals {
     0% {
-        top: -10%; /* Vị trí ban đầu của hoa hồng */
-        opacity: 1; /* Độ trong suốt ban đầu */
+        transform: translate(-50%, -10px) rotate(0deg);
     }
     100% {
-        top: 210%; /* Vị trí cuối cùng của hoa hồng */
-        opacity: 0; /* Độ trong suốt cuối cùng */
+        transform: translate(-50%, 100vh) rotate(360deg);
     }
 }
