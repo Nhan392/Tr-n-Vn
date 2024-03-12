@@ -2,12 +2,6 @@
 .container {
     position: relative;
 }
-
-/* CSS cho hình ảnh */
-.rose-image {
-    width: 10%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container */
-}
-
 /* CSS cho container chứa hoa hồng */
 .rose-container {
     position: absolute;
