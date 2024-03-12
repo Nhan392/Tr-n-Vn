@@ -13,7 +13,7 @@
     background-size: cover;
     width: 30px; /* Điều chỉnh kích thước hoa hồng */
     height: 30px; /* Điều chỉnh kích thước hoa hồng */
-    animation: fall 5s linear infinite; /* Chỉ định hiệu ứng rơi */
+    animation: fall 2s linear infinite; /* Chỉ định hiệu ứng rơi */
 }
 
 /* Keyframes cho hiệu ứng rơi */
